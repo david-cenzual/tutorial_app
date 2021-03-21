@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 //_sugarInBlood(),
                 //_pressure(),
               ],
-            ),
+            ), 
           )
         ),
       ),
