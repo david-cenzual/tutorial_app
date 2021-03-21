@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: (){},
+        onPressed: () => Navigator.pushNamed(context, 'data'),
       ),
     );
   }

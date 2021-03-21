@@ -26,11 +26,11 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               children: <Widget>[
                 Text(
-                  'MedicNotebook beHIT',
+                  'MedicNotebook',
                   style: TextStyle(
                     color: Colors.blueAccent[300],
                     fontWeight: FontWeight.bold,
-                    fontSize: 40.0,
+                    fontSize: 20.0,
                   ),
                 ),
                 SizedBox(height:20.0),
@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    Text('Entra la informació necessaria:'),
+                    Text('Identificació:'),
                   ],
                 ),
                 SizedBox(height:20.0),
@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 30.0),
                 ElevatedButton(
                   child: Text('Accedir'),
-                  onPressed: ()=> Navigator.pushNamed(context, 'home'),
+                  onPressed: () => Navigator.pushNamed(context, 'home'),
                 ),
                 SizedBox(height: 30.0),
                 TextButton(

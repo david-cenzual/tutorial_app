@@ -7,7 +7,7 @@ class User {
 
   User({
     this.id,
-    this.email,
-    this.password,
+    this.email = '',
+    this.password = '',
   });
 }

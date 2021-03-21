@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial_app/src/model/user.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key key}) : super(key: key);
@@ -10,6 +11,8 @@ class RegisterPage extends StatefulWidget {
 class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
+
+    User user = User();
     
     final _emailController = TextEditingController();
     final _passwordController = TextEditingController();
@@ -39,7 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    Text('Entra la informació necessaria:'),
+                    Text('Proporciona la informació necessaria:'),
                   ],
                 ),
                 SizedBox(height:20.0),
@@ -62,7 +65,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 SizedBox(height: 30.0),
                 ElevatedButton(
                   child: Text('Registrar'),
-                  onPressed: (){},
+                  onPressed: (){
+                    user.email = _emailController.toString();
+                    user.password = _passwordController.toString();
+                  },
                 ),
                 SizedBox(height: 30.0),
                 TextButton(
